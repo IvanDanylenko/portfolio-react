@@ -1,0 +1,13 @@
+.app {
+	display: flex;
+}
+
+.navbar-wrapper {
+	width: 10%;
+	min-height: 1px;
+	height: 100vh;
+}
+
+.content-wrapper {
+	width: 90%;
+}

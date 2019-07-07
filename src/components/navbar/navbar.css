@@ -1,0 +1,20 @@
+.navbar {
+	height: 100%;
+	background-color: rgba(14, 15, 16, .6);
+}
+
+.navbar ul {
+	
+}
+
+.navbar a {
+	color: #fff;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.navbar .logo {
+	padding: 40px 0;
+	border-bottom: 5px solid #0e0f10;
+	text-align: center;
+}
