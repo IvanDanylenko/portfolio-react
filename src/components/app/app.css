@@ -1,13 +1,19 @@
 .app {
 	display: flex;
-}
-
-.navbar-wrapper {
-	width: 10%;
-	min-height: 1px;
+	background-image: url("/img/home-bg.jpg");
+	background-size: cover;
+	background-position: center;
 	height: 100vh;
 }
 
-.content-wrapper {
+.app .navbar-wrapper {
+	width: 10%;
+	min-height: 1px;
+	height: 100%;
+}
+
+.app .content-wrapper {
 	width: 90%;
+	min-height: 1px;
+	height: 100%;
 }

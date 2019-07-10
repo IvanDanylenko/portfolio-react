@@ -1,0 +1,143 @@
+/* ---------------------------------
+		14. Animation Css
+--------------------------------- */
+/* Animation zoomIn */ 
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Animation rotating */ 
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* Animation Spinner */
+@-webkit-keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+/* Animation Music Line */
+@-webkit-keyframes musicline {
+    0% {height: 5px;}
+    10% {height: 10px;}
+    20% {height: 5px;}
+    30% {height: 14px;}
+    40% {height: 18px;}
+    50% {height: 5px;}
+    60% {height: 16px;}
+    70% {height: 10px;}
+    80% {height: 12px;}
+    90% {height: 4px;}
+    100% {height: 18px;}
+}
+
+@keyframes musicline {
+    0% {height: 5px;}
+    10% {height: 10px;}
+    20% {height: 5px;}
+    30% {height: 14px;}
+    40% {height: 18px;}
+    50% {height: 5px;}
+    60% {height: 16px;}
+    70% {height: 10px;}
+    80% {height: 12px;}
+    90% {height: 4px;}
+    100% {height: 18px;}
+}
+
+/* Ken Burns Slide */ 
+@-webkit-keyframes kenburnsSlide {
+ 	0% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1);
+		transform: scale(1);
+ 	}
+ 	5% {
+ 		opacity: 1
+ 	}
+ 	25% {
+ 		opacity: 1
+ 	}
+ 	40% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+ 
+@keyframes kenburnsSlide {
+ 	0% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1);
+		transform: scale(1);
+ 	}
+ 	5% {
+ 		opacity: 1
+ 	}
+ 	25% {
+ 		opacity: 1
+ 	}
+ 	40% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,54 @@
+.page-header {
+	text-align: center;
+	position: relative;
+}
+
+.page-header h2 {
+	font-size: 35px;
+}
+
+.page-header:before, .page-header:after {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: #25ca7f;
+	position: absolute;
+	bottom: -19px;
+}
+
+.page-header:before {
+	left: calc(50% - 46px);
+}
+
+.page-header:after {
+	left: calc(50% + 16px);
+}
+
+.page-header span {
+	position: absolute;
+	width: 35px;
+	height: 17px;
+	left: calc(50% - 17px);
+	margin-top: 10px;
+}
+
+.page-header span:before, .page-header span:after {
+	content: '';
+	width: 16px;
+	height: 16px;
+	border: 2px solid #25ca7f;
+	border-radius: 50px 50px 0 50px;
+	position: absolute;
+	top: 0;
+}
+
+.page-header span:before {
+	left: 0;
+	transform: rotate(-45deg);
+}
+
+.page-header span:after {
+	right: 0;
+	transform: rotate(135deg);
+}

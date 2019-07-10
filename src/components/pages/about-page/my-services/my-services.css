@@ -1,0 +1,36 @@
+.about .service {
+	text-align: center;
+}
+
+.about .service i {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	font-size: 25px;
+	line-height: 70px;
+	color: #fff;
+	background-color: #0e0f10;
+	border-radius: 50%;
+}
+
+.about .service:hover i:after {
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 5px;
+	left: calc(50% - 30px);
+	border-radius: 100%;
+	border: 1px solid #25ca7f;
+	-webkit-animation: zoomIn .3s ease;
+	animation: zoomIn .3s ease;
+}
+
+.about .service h4 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.about .service p {
+	margin-bottom: 1rem;
+}
