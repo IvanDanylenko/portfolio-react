@@ -19,8 +19,20 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
 h3 {
 	font-size: 26px;
+}
+
+h4 {
+	font-size: 18px;
 }
 
 ul, li {
@@ -40,7 +52,8 @@ a:hover {
 }
 
 p {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 img {
@@ -54,15 +67,23 @@ section {
 }
 
 .pt-50 {
-	padding-top: 50px;
-}
-
-.mb-100 {
-	margin-bottom: 100px;
+	padding-top: 50px !important;
 }
 
 .mb-40 {
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-90 {
+	margin-bottom: 90px !important;
+}
+
+.mb-100 {
+	margin-bottom: 100px !important;
 }
 
 .header-box {

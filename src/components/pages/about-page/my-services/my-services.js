@@ -7,7 +7,7 @@ const MyServices = () => {
 			<div className="header-box">
 				<h3>Services</h3>
 			</div>
-			<div className="row">
+			<div className="row mb-60">
 				<div className="col-lg-6 col-sm-6">
 					<div className="service box mb-40">
 						<i className="fas fa-desktop"></i>

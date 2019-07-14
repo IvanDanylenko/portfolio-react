@@ -5,6 +5,8 @@ import PageHeader from '../common/page-header';
 import InfoBox from './info-box';
 import MyInterests from './my-interests';
 import MyServices from './my-services';
+import Testimonials from './testimonials';
+import Price from './price';
 
 const AboutPage = () => {
 	return (
@@ -17,6 +19,10 @@ const AboutPage = () => {
 				<MyInterests />
 				{/* services */}
 				<MyServices />
+				{/* testimonials */}
+				<Testimonials />
+				{/* Price */}
+				<Price />
 			</div> {/* end of container */}
 		</section>
 	);

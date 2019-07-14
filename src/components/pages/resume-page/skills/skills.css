@@ -1,0 +1,52 @@
+.skills .item {
+	padding: 0 20px;
+}
+
+.skills .progress-title {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+.skills .progress {
+	display: flex;
+	font-size: .75rem;
+	border-radius: .25rem;
+	height: 8px;
+	background-color: #0e0f10;
+	margin-bottom: 40px;
+	overflow: visible;
+}
+
+.skills .progress-bar {
+	position: relative;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	background-color: #25ca7f;
+	text-align: center;
+	white-space: nowrap;
+	transition: width .6s ease;
+}
+
+.skills .progress-bar:after {
+		content: '';
+	position: absolute;
+	display: block;
+	top: -5px;
+	right: 0px;
+	padding: 6px;
+	background-color: #0e0f10;
+	border-radius: 50%;
+	border: 3px solid #25ca7f;
+}
+
+.skills .progress-value {
+	position: absolute;
+	top: -30px;
+	right: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+}
