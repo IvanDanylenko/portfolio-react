@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isotope-layout": "^3.0.6",
     "react": "^16.8.6",
     "react-alice-carousel": "^1.15.2",
     "react-dom": "^16.8.6",
