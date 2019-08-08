@@ -1,5 +1,5 @@
 import React from 'react';
-import './skills.css';
+import './skills.scss';
 
 import ChartDiagram from './chart-diagram';
 

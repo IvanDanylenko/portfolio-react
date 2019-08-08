@@ -1,5 +1,5 @@
 import React from 'react';
-import './info-box.css';
+import './info-box.scss';
 
 const InfoBox = () => {
 	return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './blog-page.css';
+import './blog-page.scss';
 
 import PageHeader from '../common/page-header';
 

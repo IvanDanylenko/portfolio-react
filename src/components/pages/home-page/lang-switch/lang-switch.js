@@ -1,5 +1,5 @@
 import React from 'react';
-import './lang-switch.css';
+import './lang-switch.scss';
 
 const LangSwitch = () => {
 	return (

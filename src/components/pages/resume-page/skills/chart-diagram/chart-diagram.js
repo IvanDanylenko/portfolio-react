@@ -1,5 +1,5 @@
 import React from 'react';
-import './chart-diagram.css';
+import './chart-diagram.scss';
 
 class ChartDiagram extends React.Component {
 	componentDidMount() {

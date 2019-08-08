@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './portfolio-page.css';
+import './portfolio-page.scss';
 
 import PageHeader from '../common/page-header';
 import PortfolioFilter from './portfolio-filter';

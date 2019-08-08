@@ -1,5 +1,5 @@
 import React from 'react';
-import './home-page.css';
+import './home-page.scss';
 
 import LangSwitch from './lang-switch';
 import Social from './social';

@@ -1,0 +1,62 @@
+.portfolio-items {
+	margin: 0;
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	background-color: #25ca7f;
+	border-radius: 10px;
+	overflow: hidden;
+	img {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		transition: all .3s;
+	}
+	figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px;
+		color: #fff;
+		h3 {
+			opacity: 0;
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			transition: all .3s;
+		}
+		p {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			margin: 20px;
+			font-size: 14px;
+			padding-left: 15px;
+			opacity: 0;
+			transform: translateX(-200%);
+			transition: all .3s;
+		}
+		i {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			margin: 20px;
+			font-size: 24px;
+			opacity: 0;
+			transform: translateX(200%);
+			transition: all .3s;
+		}
+		a {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}

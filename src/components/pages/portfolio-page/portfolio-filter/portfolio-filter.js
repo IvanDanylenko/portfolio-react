@@ -1,5 +1,5 @@
 import React from 'react';
-import './portfolio-filter.css';
+import './portfolio-filter.scss';
 
 const PortfolioFilter = ({ selected, filter, handleClick }) => {
 	const elements = filter.map((item) => {

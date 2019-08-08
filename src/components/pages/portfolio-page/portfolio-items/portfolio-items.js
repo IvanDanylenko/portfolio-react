@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // import Isotope from 'isotope-layout';
 
-import './portfolio-items.css';
+import './portfolio-items.scss';
 
 class PortfolioItems extends Component {
 

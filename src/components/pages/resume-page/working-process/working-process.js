@@ -1,5 +1,5 @@
 import React from 'react';
-import './working-process.css';
+import './working-process.scss';
 
 const WorkingProcess = () => {
 	return (

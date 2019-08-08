@@ -1,5 +1,5 @@
 import React from 'react';
-import './about-page.css';
+import './about-page.scss';
 
 import PageHeader from '../common/page-header';
 import InfoBox from './info-box';

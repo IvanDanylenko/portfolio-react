@@ -1,5 +1,5 @@
 import React from 'react';
-import './resume-page.css';
+import './resume-page.scss';
 
 import PageHeader from '../common/page-header';
 import Experience from './experience';
