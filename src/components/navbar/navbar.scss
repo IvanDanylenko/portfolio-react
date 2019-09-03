@@ -50,3 +50,57 @@
 		color: #25ca7f;
 	}
 }
+
+.navbar__sound {
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-top: 5px solid #0e0f10;
+	z-index: 10;
+	transition: all 0.3s ease;
+	background: transparent;
+	p {
+		color: #fff;
+		margin: 0;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.lines {
+		display: flex;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 10px;
+		align-items: flex-end;
+		span {
+			display: inline-flex;
+			margin: 0px 1px;
+			width: 7px;
+			height: 5px;
+			background: #fff;
+		}
+	}
+	&.audio-on .lines {
+		span:nth-child(1) {
+			animation: musicline 2s 0.5s ease-out alternate infinite;
+		}
+		span:nth-child(2) {
+			animation: musicline 2s 1s ease-out alternate infinite;
+		}
+		span:nth-child(3) {
+			animation: musicline 2s 1.5s ease-out alternate infinite;
+		}
+		span:nth-child(4) {
+			animation: musicline 2s 0.25s ease-out alternate infinite;
+		}
+		span:nth-child(5) {
+			animation: musicline 2s 0.75s ease-out alternate infinite;
+		}
+		span:nth-child(6) {
+			animation: musicline 2s 1.25s ease-out alternate infinite;
+		}
+	}
+}
