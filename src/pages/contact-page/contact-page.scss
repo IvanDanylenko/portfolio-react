@@ -1,0 +1,80 @@
+.contact {
+  form {
+    input, textarea {
+      display: block;
+      font-size: 15px;
+      height: 50px;
+      width: 100%;
+      padding: .375rem .75rem 10px;
+      line-height: 1.5;
+      color: #fff;
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #444;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      transition: all .15s ease-in-out;
+      &:focus {
+        border-bottom-color: #25ca7f;
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      border: none;
+      -webkit-text-fill-color: #fff;
+      -webkit-box-shadow: inset 0 0 0 1000px #010101 !important;
+      transition: background-color 5000s ease-in-out;
+    }
+    textarea {
+      min-height: 100px;
+      height: 100px;
+      max-height: 250px;
+      resize: vertical;
+    }
+    .btn-st {
+      display: block;
+      margin: 0 auto 20px;
+      &[disabled] {
+        color: #495057;
+      }
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 50px;
+      p {
+        margin: 0;
+        color: #b80f0a;
+        position: absolute;
+        bottom: -30px;
+      }
+    }
+    .success {
+      margin: 0;
+      color: #25ca7f;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    a {
+      display: block;
+    }
+    i {
+      font-size: 30px;
+      color: #fff;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      padding: 30px 0 0px;
+    }
+    span {
+      color: #495057;
+    }
+  }
+}

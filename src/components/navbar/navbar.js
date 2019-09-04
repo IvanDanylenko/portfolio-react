@@ -7,26 +7,40 @@ import './navbar.scss';
 class Navbar extends Component {
 	state = {
 		menu: [
-			{ path: "/", icon: "fas fa-house-damage", title: "Home", isActive: false },
-			{ path: "/about", icon: "fas fa-user-tie", title: "About Me", isActive: false },
-			{ path: "/resume", icon: "fas fa-address-book", title: "Resume", isActive: false },
-			{ path: "/portfolio", icon: "fas fa-briefcase", title: "Portfolio", isActive: false },
-			{ path: "/blog", icon: "fas fa-receipt", title: "Blog", isActive: false },
-			{ path: "/contact", icon: "fas fa-envelope", title: "Contact", isActive: false }
+			{ path: "/", icon: "fas fa-house-damage", title: "Home", hotkey: '1', isActive: false },
+			{ path: "/about", icon: "fas fa-user-tie", title: "About Me", hotkey: '2', isActive: false },
+			{ path: "/resume", icon: "fas fa-address-book", title: "Resume", hotkey: '3', isActive: false },
+			{ path: "/portfolio", icon: "fas fa-briefcase", title: "Portfolio", hotkey: '4', isActive: false },
+			{ path: "/blog", icon: "fas fa-receipt", title: "Blog", hotkey: '5', isActive: false },
+			{ path: "/contact", icon: "fas fa-envelope", title: "Contact", hotkey: '6', isActive: false }
 		]
 	}
 
 	componentDidMount() {
-		// set initial active menu element
-		const path = window.location.pathname;
-		this.setActiveMenuItem(path);
+		this.setActiveMenuItem();
+
+		document.addEventListener('keydown', this.manageShortcuts)
 	}
 
-	toggleActive = (path) => {
-		this.setActiveMenuItem(path);
+	componentDidUpdate(prevProps) {
+		if (this.props.location.pathname !== prevProps.location.pathname) {
+			this.setActiveMenuItem();
+		}
 	}
 
-	setActiveMenuItem = (path) => {
+	manageShortcuts = (e) => {
+		const target = e.target.localName;
+		if (target !== 'input' && target !== 'textarea') {
+			const { menu } = this.state;
+			const action = menu.find((item) => item.hotkey === e.key);
+			if (action && action.isActive === false) {
+				this.props.history.push(action.path);
+			}
+		}
+	}
+
+	setActiveMenuItem = () => {
+		const { pathname: path } = this.props.location;
 		this.setState(({menu}) => {
 			const arr = menu.slice();
 			arr.forEach(element => {
@@ -48,15 +62,14 @@ class Navbar extends Component {
 				</div>
 				<nav>
 					<ul>
-						{ menu.map(({path, icon, title, isActive}) => (
+						{ menu.map(({path, icon, title, hotkey, isActive}) => (
 								<li 
 									key={title} 
-									className={isActive ? "active" : null}
-									onClick={() => { this.toggleActive(path) }}>
+									className={isActive ? "active" : null}>
 									<Link to={path}>
 										<i className={icon}></i>
 									</Link>
-									<span>{title}</span>
+									<span>{`${title} (${hotkey})`}</span>
 								</li>
 							)) }
 					</ul>

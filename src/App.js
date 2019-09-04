@@ -19,7 +19,7 @@ export default class App extends Component {
 				<BrowserRouter>
 					<div className="navbar-wrapper">
 						<SimpleBar style={{ height: '100%' }}>
-							<Navbar />
+							<Route path="/" component={Navbar} />
 						</SimpleBar>
 					</div>
 					<div className="content-wrapper">

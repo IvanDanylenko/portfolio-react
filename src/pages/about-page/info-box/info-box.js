@@ -4,7 +4,7 @@ import './info-box.scss';
 const InfoBox = () => {
 	return (
 		<div className="info box">
-			<div className="row">
+			<div className="row mb-40">
 				<div className="col-lg-3 col-sm-4">
 					<div className="photo">
 						<img src="/img/user-photo.jpg" alt="" />
@@ -19,6 +19,8 @@ const InfoBox = () => {
 					<p>Hello! I’m Alex Smith a self-taught & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.</p>
 					<p>I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.</p>
 				</div>
+			</div>
+			<div className="row">
 				<div className="col-lg-3 col-sm-4">
 					<div className="info-icon">
 						<i className="fas fa-award"></i>
@@ -46,7 +48,7 @@ const InfoBox = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-3 col-sm-4 pt-50">
+				<div className="col-lg-3 col-sm-4">
 					<a href="link-here" className="btn-st">Download CV</a>
 				</div>
 			</div>
